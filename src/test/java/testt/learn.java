@@ -3,6 +3,7 @@ package testt;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
@@ -27,7 +28,7 @@ public class learn {
 	       
 	       System.out.println("current is title = "+return_title);
 	       
-	       String exp_title="Not sure Where To Begin?";
+	       String exp_title="Not Sure Where To Begin?";
 	       
 	       if(return_title.equals(exp_title)) {
 	    	   
@@ -42,5 +43,28 @@ public class learn {
 	       
 
 	    }
+	 @Test(priority = 2)
+	    public void Method_two() throws InterruptedException {
+		 
+		String url= driver.getCurrentUrl();
+		System.out.println(url);
+	 driver.close();
+	 }
+	 @Test(priority = 3)
+	    public void Method_three() throws InterruptedException {
+	        // Set the desired window size
+		 driver.manage().window().maximize();
+	     
+	     Thread.sleep(3000);
+	     //                           W & H
+	     Dimension Size =new Dimension(400,500);
+	     
+	     driver.manage().window().setSize(Size);
+	     
+	     Thread.sleep(5000);
+	     
+	     System.out.println("resized");
+	     driver.quit();
+	 }
 
 }

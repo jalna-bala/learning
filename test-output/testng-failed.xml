@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Learning">
+      <class name="testt.learn">
         <methods>
-          <include name="M1"/>
           <include name="setUp"/>
+          <include name="Method_three"/>
         </methods>
-      </class> <!-- Learning -->
+      </class> <!-- testt.learn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
