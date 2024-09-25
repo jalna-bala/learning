@@ -26,7 +26,7 @@ public class Learning {
 	       System.out.println("current is title = "+return_title);
 	       
 	       String exp_title="Not sure Where To Begin?";
-	       System.out.println("git");
+	       
 	       if(return_title.equals(exp_title)) {
 	    	   
 	    	   System.out.println("title correct");
