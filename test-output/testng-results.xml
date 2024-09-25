@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-25T12:44:46 IST" name="Default suite" finished-at="2024-09-25T12:44:51 IST" duration-ms="4760">
+  <suite started-at="2024-09-25T12:50:51 IST" name="Default suite" finished-at="2024-09-25T12:50:57 IST" duration-ms="6419">
     <groups>
     </groups>
-    <test started-at="2024-09-25T12:44:46 IST" name="Default test" finished-at="2024-09-25T12:44:51 IST" duration-ms="4760">
-      <class name="Learning">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Learning@1e1a0406]" started-at="2024-09-25T12:44:46 IST" name="setUp" finished-at="2024-09-25T12:44:50 IST" duration-ms="4248" status="PASS">
+    <test started-at="2024-09-25T12:50:51 IST" name="Default test" finished-at="2024-09-25T12:50:57 IST" duration-ms="6419">
+      <class name="testt.learn">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testt.learn@23c30a20]" started-at="2024-09-25T12:50:51 IST" name="setUp" finished-at="2024-09-25T12:50:57 IST" duration-ms="6016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Method_one()[pri:1, instance:Learning@1e1a0406]" started-at="2024-09-25T12:44:50 IST" name="Method_one" finished-at="2024-09-25T12:44:51 IST" duration-ms="442" status="PASS">
+        <test-method signature="Method_one()[pri:1, instance:testt.learn@23c30a20]" started-at="2024-09-25T12:50:57 IST" name="Method_one" finished-at="2024-09-25T12:50:57 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Method_one -->
-      </class> <!-- Learning -->
+      </class> <!-- testt.learn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
