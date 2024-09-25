@@ -4,8 +4,8 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Learn_automation</groupId>
-    <artifactId>Learn_automation</artifactId>
+    <groupId>Learn_automation</groupId> <!-- Updated project name -->
+    <artifactId>Learn_automation</artifactId> <!-- Updated project name -->
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -22,17 +22,18 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+        
         <dependency>
-    <groupId>com.sun.mail</groupId>
-    <artifactId>javax.mail</artifactId>
-    <version>1.6.2</version>
-</dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+        </dependency>
 
         <dependency>
-    <groupId>jakarta.mail</groupId>
-    <artifactId>jakarta.mail-api</artifactId>
-    <version>2.0.1</version>
-</dependency>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
+            <version>2.0.1</version>
+        </dependency>
 
         <!-- Selenium WebDriver -->
         <dependency>
@@ -82,11 +83,6 @@
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>5.0.9</version> <!-- Use a single version -->
-        </dependency>
-        <dependency>
-        	<groupId>Bala_mavan</groupId>
-        	<artifactId>Testings</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
