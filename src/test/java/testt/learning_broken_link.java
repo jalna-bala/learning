@@ -21,6 +21,7 @@ public class learning_broken_link {
     int workingLinksCount = 0;
     int forbiddenLinksCount = 0;
     int skippingNonHttpCount = 0;
+    int blockedByAutomationCount = 0;  // Count for links blocked by automation (e.g., LinkedIn's 999 status)
 
     @BeforeMethod
     public void setUp() {
@@ -75,6 +76,9 @@ public class learning_broken_link {
                 if (responseCode == 403) {
                     System.out.println(url + " is a forbidden link (status code: 403).");
                     forbiddenLinksCount++;
+                } else if (responseCode == 999) {
+                    System.out.println(url + " is blocked by automation (status code: 999).");
+                    blockedByAutomationCount++;  // Increment count for blocked links
                 } else if (responseCode >= 400) {
                     System.out.println(url + " is a broken link with status code: " + responseCode);
                     brokenLinksCount++;
@@ -95,6 +99,7 @@ public class learning_broken_link {
         System.out.println("Total broken links: " + brokenLinksCount);
         System.out.println("Total forbidden links: " + forbiddenLinksCount);
         System.out.println("Total skipping non-HTTP URL: " + skippingNonHttpCount);
+        System.out.println("Total links blocked by automation: " + blockedByAutomationCount);  
     }
 
     @AfterMethod
